@@ -144,17 +144,6 @@
 {{- end }}
 {{- end }}
 
-{{- if and .Site.GoogleAnalytics hugo.IsProduction }}
-<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', '{{ .Site.GoogleAnalytics }}');
-</script>
-{{- end }}
-
 {{ partial "custom-head" . }}
 
 {{- with .Site.Params.icon }}
