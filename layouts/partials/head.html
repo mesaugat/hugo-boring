@@ -52,8 +52,6 @@
 {{ end }}
 <title>{{ partial "get-title" . }}</title>
 
-<meta name="generator" content="Hugo Eureka {{ .Site.Data.eureka.version }}" />
-
 {{- $eurekaCSS := resources.Get "css/eureka.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
 {{- $eurekaCSS := $eurekaCSS | minify }}
 <link rel="stylesheet" href="{{ $eurekaCSS.Permalink }}">
