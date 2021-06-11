@@ -1,0 +1,5 @@
+theme = "hugo-boring"
+themesdir = "../.."
+baseURL = "https://theboring.dev/"
+languageCode = "en-us"
+title = "The Boring Dev"
