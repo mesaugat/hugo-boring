@@ -1,5 +1,5 @@
 .object-contain {
-    object-fit: contain !important;
+  object-fit: contain !important;
 }
 
 .pagination {
@@ -10,7 +10,7 @@
   @apply flex items-center;
 }
 
-.pagination .page-item .page-link{
+.pagination .page-item .page-link {
   @apply p-2 m-2;
 }
 

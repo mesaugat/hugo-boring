@@ -3,7 +3,7 @@
 }
 
 .content > * {
-  @apply mb-4;
+  @apply mb-6;
 }
 
 .content li + li {
@@ -106,5 +106,3 @@
   padding-top: 4rem;
   margin-top: -4rem;
 }
-
-
