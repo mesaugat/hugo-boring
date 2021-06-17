@@ -20,7 +20,7 @@ Eureka supports the rendering of diagrams by using Mermaid.
 
 Please include the Mermaid diagram as below. Every mermaid chart/graph/diagram definition, has to have separate `<div>` tags.
 
-In order to render the HTML code in the Markdown file correctly, please make sure that `markup.goldmark.renderer.unsafe` in `config.yaml` is true.
+In order to render the HTML code in the Markdown file correctly, please make sure that `markup.goldmark.renderer.unsafe` in `config.yml` is true.
 
 Here is one mermaid diagram:
 
