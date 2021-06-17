@@ -13,7 +13,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      serif: ['Lora', 'Noto Serif SC', 'serif'],
+      serif: ['Open Sans', 'Merriweather', 'serif'],
       mono: ['SFMono-Regular', 'Menlo']
     },
     extend: {
