@@ -1,7 +1,7 @@
 ---
 title: Example Author
 role: Example Role
-avatar: images/author.png
+avatar: images/avatar.png
 bio: Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur.
 organization:
   name: Example Organization
