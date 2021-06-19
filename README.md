@@ -4,9 +4,22 @@ Boring is a minimal theme for [Hugo](https://gohugo.io/) and is a fork of the fe
 
 Boring is opinionated and is used for my [personal blog](https://theboring.dev).
 
+## Boring Preview
+
+![Hugo Boring Demo](./exampleSite/boring-demo.png)
+
+**Note of Caution**: I do not intend to add any extra features that are not going to be used in my personal blog. If you do want to extend the theme and your own features, please fork the repository.
+
 ## Try Boring
 
-**Note of Caution**: I do not intend to add any extra features that are not going to be used in my personal blog. If you do want to extend the theme please fork the repository.
+```bash
+git clone git@github.com:mesaugat/hugo-boring.git
+cd hugo-boring
+npm install
+npm install -g postcss postcss-cli autoprefixer
+cd exampleSite
+hugo server
+```
 
 ## License
 
