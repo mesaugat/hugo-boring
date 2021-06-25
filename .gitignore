@@ -31,3 +31,4 @@ public
 
 # Folders to ignore
 node_modules
+exampleSite/resources
