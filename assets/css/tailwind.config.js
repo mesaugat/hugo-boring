@@ -9,12 +9,12 @@ module.exports = {
       themeDir + 'exampleSite/content/**/*.html',
       'layouts/**/*.html',
       'content/**/*.html'
-    ],
+    ]
   },
   theme: {
     fontFamily: {
-      serif: ['Open Sans', 'Merriweather', 'serif'],
-      mono: ['SFMono-Regular', 'Menlo']
+      serif: ['Source Sans Pro', 'Merriweather', 'serif'],
+      mono: ['SFMono-Regular', 'Menlo', 'monospace']
     },
     extend: {
       height: {
@@ -46,8 +46,8 @@ module.exports = {
         'primary-text': 'var(--color-primary-text)',
         'secondary-text': 'var(--color-secondary-text)',
         'tertiary-text': 'var(--color-tertiary-text)'
-      },
-    },
+      }
+    }
   },
   variants: {},
   plugins: []
