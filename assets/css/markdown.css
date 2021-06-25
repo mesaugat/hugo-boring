@@ -1,5 +1,5 @@
 .content {
-  @apply text-primary-text leading-normal break-words;
+  @apply text-lg leading-normal break-words;
 }
 
 .content > * {
