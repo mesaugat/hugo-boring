@@ -56,7 +56,7 @@
 {{- $mainCss := $mainCss | minify }}
 <link rel="stylesheet" href="{{ $mainCss.Permalink }}">
 
-{{- $mainJs := resources.Get "js/boring.js" | resources.ExecuteAsTemplate "js/.js" . | minify }}
+{{- $mainJs := resources.Get "js/boring.js" | resources.ExecuteAsTemplate "js/boring.js" . | minify }}
 <script defer src="{{ $mainJs.Permalink }}"></script>
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
