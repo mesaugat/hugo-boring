@@ -13,10 +13,9 @@ featuredImage:
 draft: false
 ---
 
-Eureka supports the rendering of diagrams by using Mermaid.
+Boring supports the rendering of diagrams by using Mermaid.
 
 <!--more-->
-
 
 Please include the Mermaid diagram as below. Every mermaid chart/graph/diagram definition, has to have separate `<div>` tags.
 
