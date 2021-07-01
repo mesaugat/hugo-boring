@@ -21,8 +21,6 @@
         {{ with .GetTerms "authors" }}
         {{ partial "components/post-author" . }}
         {{ end }}
-
-        {{ partial "components/post-footer" . }}
     </div>
 
     {{ $related := .Site.RegularPages.Related . | first 6 }}
