@@ -22,7 +22,7 @@
 {{ define "partials/widgets/pages-plain" }}
   {{ $pages := partial "widgets/pages-get" . }}
   {{ partial "components/summary-list-plain" $pages }}
-  <div class="pt-2 hover:text-eureka">
+  <div class="pt-2 hover:text-boring">
     {{ partial "widgets/pages-readmore" . }}
   </div>
 {{ end }}
@@ -31,14 +31,14 @@
   {{ $pages := partial "widgets/pages-get" . }}
   <div class="overflow-hidden">
     {{ partial "components/summary-list-card" $pages }}
-    <div class="px-8 pt-2 hover:text-eureka">
+    <div class="px-8 pt-2 hover:text-boring">
       {{ partial "widgets/pages-readmore" . }}
     </div>
   </div>
 {{ end }}
 
 {{ define "partials/widgets/pages-masonry" }}
-  <div class="pb-2 text-right hover:text-eureka">
+  <div class="pb-2 text-right hover:text-boring">
     {{ partial "widgets/pages-readmore" . }}
   </div>
   {{ $pages := partial "widgets/pages-get" . }}

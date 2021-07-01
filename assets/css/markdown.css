@@ -19,11 +19,11 @@
 }
 
 .content a {
-  @apply text-eureka;
+  @apply text-boring;
 }
 
 .content a:hover {
-  @apply text-eureka underline;
+  @apply text-boring underline;
 }
 
 .content strong a {

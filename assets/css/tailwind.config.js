@@ -39,7 +39,7 @@ module.exports = {
         scrollbar: 'calc(100vw - 100%)'
       },
       colors: {
-        eureka: 'var(--color-eureka)',
+        boring: 'var(--color-boring)',
         'primary-bg': 'var(--color-primary-bg)',
         'secondary-bg': 'var(--color-secondary-bg)',
         'tertiary-bg': 'var(--color-tertiary-bg)',

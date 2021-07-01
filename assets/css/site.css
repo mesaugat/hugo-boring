@@ -15,15 +15,15 @@
 }
 
 .pagination .active {
-  @apply text-eureka;
+  @apply text-boring;
 }
 
 .pagination .page-item:not(.disabled):hover {
-  @apply text-eureka;
+  @apply text-boring;
 }
 
 .selected-menu-item {
-  @apply text-eureka;
+  @apply text-boring;
   border-top-color: var(--color-eureka);
   border-bottom-color: transparent;
 }
