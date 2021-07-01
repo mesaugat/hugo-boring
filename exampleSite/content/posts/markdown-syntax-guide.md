@@ -101,6 +101,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     </html>
 
 #### Code block with Hugo's internal highlight shortcode
+
 {{< highlight html >}}
 <!doctype html>
 <html lang="en">
