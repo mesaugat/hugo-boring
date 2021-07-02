@@ -1,0 +1,8 @@
+{{ if and (.Get "alt") (.Get "src") }}
+  <figure class="inline-block">
+    <img src="{{ .Get "src" | safeURL }}" alt="{{ .Get "alt" }}">
+    <figcaption class="text-sm text-center text-gray-400">{{ .Get "alt" }}</figcaption>
+  </figure>
+{{ else }}
+  <img src="{{ .Get "src" | safeURL }}" alt="{{ .Get "alt" }}">
+{{ end }}
