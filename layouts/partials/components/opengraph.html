@@ -2,10 +2,10 @@
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 {{ $icon := partial "utils/get-image" (dict "context" . "url" .Site.Params.icon) }}
 {{ with $icon }}
-<meta property="og:image" content="{{ . }}">
+<meta property="og:image" content="{{ . | absURL }}">
 {{ end }}
 
-<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink | absURL }}" />
 
 {{ with .Params.audio }}
 <meta property="og:audio" content="{{ . | absURL }}" />
@@ -69,12 +69,12 @@
 {{ range (.GetTerms "series") }}
 {{ range .Pages }}
 {{ if ne .Page.Permalink $pageLink }}
-<meta property="og:see_also" content="{{ .Page.Permalink }}" />
+<meta property="og:see_also" content="{{ .Page.Permalink | absURL }}" />
 {{ end }}
 {{ end }}
 {{ end }}
 {{ else if (.Site.RegularPages.Related .) }}
 {{ range (.Site.RegularPages.Related . | first 6) }}
-<meta property="og:see_also" content="{{ .Page.Permalink }}" />
+<meta property="og:see_also" content="{{ .Page.Permalink | absURL }}" />
 {{ end }}
 {{ end }}
