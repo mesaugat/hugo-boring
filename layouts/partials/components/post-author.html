@@ -13,11 +13,8 @@
             <a href="{{ .Permalink }}" class="block font-bold text-lg pb-1 mb-2 border-b">{{ .LinkTitle }}</a>
             <span class="block pb-2">{{ .Params.bio }}</span>
             {{ range .Params.social }}
-            {{/*  Deprecation warning(v1.0.0) starts  */}}
-            {{ $iconPack := .iconPack | default .icon_pack }}
-            {{/*  Deprecation warning(v1.0.0) ends  */}}
-            {{ $src :=  print $iconPack " fa-" .icon }}
-            <a href="{{ .url }}" class="mr-1">
+            {{ $src :=  print .iconPack " fa-" .icon }}
+            <a aria-label="{{ .icon }}" href="{{ .url }}" class="mr-1" target="_blank" rel="noopener">
                 <i class="{{ print $src }}"></i>
             </a>
             {{ end }}
