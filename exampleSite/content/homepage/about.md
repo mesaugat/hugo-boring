@@ -6,17 +6,17 @@ avatar: images/avatar.png
 bio: I might actually be (10 + 1)x.
 organization:
   name: My Organization
-  url: https://example.com/
+  url: https://example.com
 social:
   - icon: envelope
     iconPack: fas
     url: mailto:example@example.com
   - icon: twitter
     iconPack: fab
-    url: https://example.com/
+    url: https://twitter.com
   - icon: github
     iconPack: fab
-    url: https://github.com/example/
+    url: https://github.com
 
 weight: 1
 widget:
