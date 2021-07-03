@@ -12,14 +12,28 @@ Boring is opinionated and is used for my [personal blog](https://theboring.dev).
 
 ## Try Boring
 
-```bash
-git clone git@github.com:mesaugat/hugo-boring.git
-cd hugo-boring
-npm install
-npm install -g postcss postcss-cli autoprefixer
-cd exampleSite
-hugo server
-```
+- Install [hugo](https://gohugo.io/getting-started/installing/).
+
+- Clone the repository.
+
+    ```bash
+    git clone git@github.com:mesaugat/hugo-boring.git
+    ```
+
+- Install dependencies.
+
+    ```bash
+    cd hugo-boring
+    npm install
+    npm install -g postcss postcss-cli autoprefixer
+    ```
+
+- Navigate to `exampleSite/` and start hugo server.
+
+    ```bash
+    cd exampleSite
+    hugo server
+    ```
 
 ## License
 
