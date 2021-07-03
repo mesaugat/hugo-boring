@@ -19,6 +19,11 @@
   --color-tertiary-text: rgba(255, 255, 255, 0.55);
 }
 
+/* Remove text highlight when clicking on links. */
+a:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
 a:hover {
   @apply text-boring;
 }

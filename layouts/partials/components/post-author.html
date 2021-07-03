@@ -14,7 +14,7 @@
             <span class="block pb-2">{{ .Params.bio }}</span>
             {{ range .Params.social }}
             {{ $src :=  print .iconPack " fa-" .icon }}
-            <a aria-label="{{ .icon }}" href="{{ .url }}" class="mr-1" target="_blank" rel="noopener">
+            <a aria-label="{{ .icon }}" href="{{ .url }}" class="mr-2" target="_blank" rel="noopener">
                 <i class="{{ print $src }}"></i>
             </a>
             {{ end }}
