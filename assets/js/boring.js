@@ -35,26 +35,3 @@ function resizeInstance(instance) {
   item = instance.elements[0];
   resizeGridItem(item);
 }
-
-function switchLanguage() {
-  let element = document.getElementById('languageMode');
-  let targetDiv = document.getElementById('languageOptions');
-  let targets = targetDiv.getElementsByTagName('a');
-  let screen = document.getElementById('is-open-lang');
-
-  element.addEventListener('click', () => {
-    targetDiv.classList.toggle('hidden');
-    screen.classList.toggle('hidden');
-  });
-
-  for (let target of targets) {
-    target.addEventListener('click', () => {
-      targetDiv.classList.toggle('hidden');
-      screen.classList.toggle('hidden');
-    });
-  }
-  screen.addEventListener('click', () => {
-    targetDiv.classList.toggle('hidden');
-    screen.classList.toggle('hidden');
-  });
-}
