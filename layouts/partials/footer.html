@@ -1,3 +1,5 @@
 <div class="text-center p-6 pin-b">
-    <p class="text-sm text-tertiary-text">{{ with .Site.Copyright }}{{ replace . "{year}" now.Year | safeHTML }}{{ end }}</p>
+  <p class="text-sm text-tertiary-text">
+    {{ with .Site.Copyright }}{{ replace . "{year}" now.Year | safeHTML }}{{ end }}
+  </p>
 </div>

@@ -1,45 +1,31 @@
 {{ define "main" }}
 <div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
-    <div class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">{{ .Title }}</h1>
-        {{ partial "components/post-metadata" . }}
-
-        {{ $featured := partial "utils/get-featured" . }}
-        {{ with $featured }}
-        <div class="my-4">
-            {{ . }}
-        </div>
-        {{ end }}
-
-        <div class="content">
-            {{ .Content}}
-        </div>
-        {{ with .GetTerms "tags" }}
-        {{ partial "components/post-tags" . }}
-        {{ end }}
-
-        {{ with .GetTerms "authors" }}
-        {{ partial "components/post-author" . }}
-        {{ end }}
-    </div>
-
-    {{ $related := .Site.RegularPages.Related . | first 6 }}
-    {{ with $related }}
-    <div
-        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg p-6">
-        <h2 class="text-lg font-semibold mb-4">{{ i18n "seeAlso" }}</h2>
-        <div class="content">
-            {{ range . }}
-            <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-            <br />
-            {{ end }}
-        </div>
-    </div>
+  <div class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg px-6 py-8">
+    <h1 class="font-bold text-3xl text-primary-text">{{ .Title }}</h1>
+    {{ partial "components/post-metadata" . }} {{ $featured := partial "utils/get-featured" . }} {{ with $featured }}
+    <div class="my-4">{{ . }}</div>
     {{ end }}
+
+    <div class="content">{{ .Content}}</div>
+    {{ with .GetTerms "tags" }} {{ partial "components/post-tags" . }} {{ end }} {{ with .GetTerms "authors" }} {{
+    partial "components/post-author" . }} {{ end }}
+  </div>
+
+  {{ $related := .Site.RegularPages.Related . | first 6 }} {{ with $related }}
+  <div class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg p-6">
+    <h2 class="text-lg font-semibold mb-4">{{ i18n "seeAlso" }}</h2>
+    <div class="content">
+      {{ range . }}
+      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      <br />
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
 </div>
 <script>
-    document.addEventListener('DOMContentLoaded', ()=>{
-        hljs.initHighlightingOnLoad();
-    })
+  document.addEventListener('DOMContentLoaded', () => {
+    hljs.initHighlightingOnLoad();
+  });
 </script>
 {{ end }}
