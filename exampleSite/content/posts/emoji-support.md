@@ -1,7 +1,6 @@
 ---
 title: Emoji Support
 description: Guide to emoji usage in Hugo
-toc: true
 authors:
   - Hugo Authors
 tags:

@@ -1,7 +1,6 @@
 ---
 title: Featured Image
 description: Post with featured image.
-toc: true
 authors:
   - Example Author
 tags:

@@ -1,7 +1,6 @@
 ---
 title: Diagram Support
 description:
-toc: true
 authors:
   - Example Author
 tags:

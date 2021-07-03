@@ -1,7 +1,6 @@
 ---
 title: Math Support
 description:
-toc: true
 authors:
   - Example Author
 tags:

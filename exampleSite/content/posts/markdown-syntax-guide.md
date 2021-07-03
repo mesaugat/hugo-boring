@@ -1,7 +1,6 @@
 ---
 title: Markdown Syntax Guide
 description: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
-toc: true
 authors:
   - Hugo Authors
 tags:
