@@ -1,0 +1,10 @@
+name: Hugo Boring Build
+on:
+  push:
+    branches:
+      - master
+jobs:
+  Build-Resources:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
