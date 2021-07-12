@@ -1,0 +1,25 @@
+name: Hugo Boring Build
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+
+      - name: Build and Copy Resources
+        working-directory: exampleSite
+        run: |
+          hugo
+          cp -r resources ../
+
+      - name: Commit Resources
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: New build
