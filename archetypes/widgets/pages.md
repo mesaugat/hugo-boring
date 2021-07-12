@@ -5,7 +5,7 @@ draft: false
 section:
 # Pages count
 count:
-# Options: card, plain and masonry.
+# Options: card and plain.
 style:
 
 weight:
@@ -30,5 +30,5 @@ widget:
     # Options: center, top, right, bottom, left.
     position:
     # Options: fixed, local, scroll.
-    attachment: 
+    attachment:
 ---

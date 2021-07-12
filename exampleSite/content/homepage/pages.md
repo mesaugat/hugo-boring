@@ -5,7 +5,7 @@ draft: false
 section: posts
 # Pages count
 count: 5
-# Options: card, plain and masonry.
+# Options: card and plain
 style: card
 
 weight: 2

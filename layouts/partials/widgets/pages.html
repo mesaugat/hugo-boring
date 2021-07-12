@@ -3,8 +3,6 @@
 {{ end }}
 {{ if eq .Params.style "plain" }}
   {{ partial "widgets/pages-plain" . }}
-{{ else if eq .Params.style "masonry" }}
-  {{ partial "widgets/pages-masonry" . }}
 {{ else }}
   {{ partial "widgets/pages-card" . }}
 {{ end }}
@@ -35,14 +33,6 @@
       {{ partial "widgets/pages-readmore" . }}
     </div>
   </div>
-{{ end }}
-
-{{ define "partials/widgets/pages-masonry" }}
-  <div class="pb-2 text-right hover:text-boring">
-    {{ partial "widgets/pages-readmore" . }}
-  </div>
-  {{ $pages := partial "widgets/pages-get" . }}
-  {{ partial "components/summary-list-masonry" $pages }}
 {{ end }}
 
 {{ define "partials/widgets/pages-readmore" }}
