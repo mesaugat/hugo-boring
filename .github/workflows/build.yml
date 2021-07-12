@@ -1,8 +1,11 @@
-name: Hugo Boring Build
+name: Hugo Boring Build Assets
+
 on:
   push:
     branches:
       - master
+    paths:
+      - assets/**
 
 jobs:
   Build:
