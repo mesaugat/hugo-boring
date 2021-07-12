@@ -7,11 +7,11 @@
   "private": true,
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.10",
+    "autoprefixer": "^10.3.0",
+    "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
-    "postcss-import": "^14.0.1",
-    "tailwindcss": "^2.0.4"
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.4"
   },
   "browserslist": [
     "last 1 version",
