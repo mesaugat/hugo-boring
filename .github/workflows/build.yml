@@ -11,12 +11,12 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 24
 
       - name: Install NPM Packages
         run: |
@@ -24,7 +24,7 @@ jobs:
           sudo npm install -g postcss postcss-cli
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
 
       - name: Build and Copy Resources
         working-directory: exampleSite
@@ -33,6 +33,6 @@ jobs:
           cp -r resources ../
 
       - name: Commit Resources
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: New build
